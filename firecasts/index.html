@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-firestore.js"></script>
+    <title>firecasts</title>
 </head>
 <body>
-    <h1>hot dog status: <span id="content"> </span></h1>
-    <form action="/">
-        <input type="text">
-        <input type="submit">
-    </form>
+    <h1>my email is : <span id="content"> </span></h1>
+        <input type="text" id="inputField">
+        <input type="submit" value="save" id='btn'>
+        <input type="submit" value="load" id='loadBtn'>
     <script>
         var firebaseConfig = {
             apiKey: "AIzaSyAPR3uwLOEx_4MttvLgV_lc8TlRqdUiJqQ",

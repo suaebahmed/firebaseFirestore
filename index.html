@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-firestore.js"></script>
+        <!-- <link rel="stylesheet" href="styles.css"> -->
+        <style>
+            p:hover{
+                text-decoration: line-through;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Cloud Cafe</h1>
+        <div class="content">
+                <input type="text" id="input-field">
+                <input type="submit" value="save" id="btn" >
+                <input type="submit" value="show result" id="result" >
+            <ul id="cafe-list"></ul>
+            <div id="content"></div>
+        </div>
+        
+        <script>
+            var firebaseConfig = {
+              apiKey: "AIzaSyAPR3uwLOEx_4MttvLgV_lc8TlRqdUiJqQ",
+              authDomain: "fir-tutorial-93382.firebaseapp.com",
+              databaseURL: "https://fir-tutorial-93382.firebaseio.com",
+              projectId: "fir-tutorial-93382",
+              storageBucket: "fir-tutorial-93382.appspot.com",
+              messagingSenderId: "542527854954",
+              appId: "1:542527854954:web:1ed7501689208a7b2c2d13",
+              measurementId: "G-ND6CW608S9"
+            };
+            firebase.initializeApp(firebaseConfig);
+            const db = firebase.firestore();
+            // db.settings({timestampsInSnapshots});
+            // docRef = db.
+          </script>
+
+        <script src="app.js"></script>
+    </body>
+</html>
